@@ -129,6 +129,15 @@
   padding: 30px 0px 0px 0px;
   display: block;
 }
+.scroll {
+  margin-top: 3%;
+  height: 260px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  -ms-overflow-style: none; /* IE and Edge */
+}
 .cart-img {
   width: 100px;
   height: 100px;
@@ -166,18 +175,11 @@
 .cart-image image {
   width: fit-content;
 }
+
 .justify-content-center {
   margin-left: 30%;
 }
 
-.scroll {
-  margin-top: 5px;
-  height: 260px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none; /* IE and Edge */
-}
 .scrollaa {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -203,9 +205,7 @@
 }
 
 .scrollitem {
-  position: relative;
   width: 300px;
-  z-index: 2;
 }
 
 .card {
@@ -275,7 +275,6 @@
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollaa {
   -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
 .first-studio1 {
   margin-left: 2%;
@@ -356,6 +355,9 @@
   height: 40px;
   color: black;
   margin-bottom: 20px;
+}
+.coupon::placeholder {
+  padding-left: 2%;
 }
 .subtotal {
   font-weight: bold;
@@ -459,31 +461,5 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 2%;
-}
-.hover-card{
-  display: none;
-  position: absolute;
-  top:22%;
-  border: 1px solid black;
-  border-radius:25px ;
-  z-index: 0;
-  position: absolute;
-  margin-top: -30%;
-  width: 250px;
-  height: 280px;
-  background-color: black;
-  opacity: 0.6;
-}
-.items-detail p{
-  opacity: 1;
-  color:white;
-  padding-left: 15px;
-}
-.items-detail{
-    opacity: 1;
-  position: absolute;
-  top:35%;
-  left: 28%;
-  z-index: 3;
 }
 
